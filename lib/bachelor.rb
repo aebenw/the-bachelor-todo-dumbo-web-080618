@@ -58,8 +58,6 @@ def get_average_age_for_season(data, season)
       end
   end
   arr.each {|num| sum += num.to_i}
-  
   final  = sum.to_f / arr.length 
-  # binding.pry
-  p final.round
+  final.round
 end
