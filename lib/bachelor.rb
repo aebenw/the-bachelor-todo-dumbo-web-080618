@@ -56,4 +56,5 @@ def get_average_age_for_season(data, season)
         arr << specifics if info == "age"
       end
   end
+  arr
 end
