@@ -51,10 +51,12 @@ end
 
 def get_average_age_for_season(data, season)
   arr = []
+  sum = 0 
   data[season].each do |hash|
       hash.each do |info, specifics|
         arr << specifics if info == "age"
       end
   end
-  arr.reduce(:+)
+  arr.each {|num| sum += num.to_i}
+  sum / arr.length 
 end
