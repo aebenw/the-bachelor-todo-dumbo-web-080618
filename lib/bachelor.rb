@@ -61,5 +61,5 @@ def get_average_age_for_season(data, season)
   
   final  = sum.to_f / arr.length 
   binding.pry
-  final.to_f
+  p final.to_f
 end
