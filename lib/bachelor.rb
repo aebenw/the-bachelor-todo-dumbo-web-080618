@@ -7,7 +7,7 @@ def get_first_name_of_season_winner(data, season)
     arr << specifics if info == "name"
     end
   end
-  return arr.first
+  return arr.join.split(" ").first
 end
 
 def get_contestant_name(data, occupation)
