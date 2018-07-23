@@ -17,7 +17,8 @@ def get_contestant_name(data, occupation)
   data.each do |season, hash_arr|
     hash_arr.each do |hash|
       hash.each do |info, specifics|
-        if hash[occupation] ==
+        if hash["occupation"] == occupation 
+          return 
 end
 
 def count_contestants_by_hometown(data, hometown)
