@@ -52,6 +52,8 @@ end
 def get_average_age_for_season(data, season)
   arr = []
   data[season].each do |hash|
-      return hash["age"].map {|num| num}.reduce(:+) 
+      return hash.each do |info, specifics|
+        hash["age"].map {|num| num}.reduce(:+) 
+      end
   end
 end
