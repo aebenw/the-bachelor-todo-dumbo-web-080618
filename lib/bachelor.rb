@@ -5,7 +5,7 @@ def get_first_name_of_season_winner(data, season)
   
   data[season].each do |hash|
     hash.each do |info, specifics|
-    if ["status"] == "Winner"
+    if hash["status"] == "Winner"
       arr << specifics if info == "name" 
       end
     end
