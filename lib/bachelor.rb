@@ -2,7 +2,7 @@ require 'pry'
 
 def get_first_name_of_season_winner(data, season)
   binding.pry
-  names = data[season][[name]]
+  names = data[season]
 end
 
 def get_contestant_name(data, occupation)
