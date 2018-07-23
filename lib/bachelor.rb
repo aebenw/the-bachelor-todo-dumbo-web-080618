@@ -42,11 +42,10 @@ end
 def get_occupation(data, hometown)
    data.each do |season, hash_arr|
     hash_arr.each do |hash|
-      hash.find do |info, specifics|
         if hash["hometown"] == hometown
           return hash["occupation"]
         end
-      end
+      
     end
   end
 end
