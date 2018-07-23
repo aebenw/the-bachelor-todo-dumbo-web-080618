@@ -1,12 +1,12 @@
 require 'pry'
 
 def get_first_name_of_season_winner(data, season)
-  # binding.pry
   data[season].each do |hash|
     hash.each do |info, specifics|
-    return specifics if info == "name"
+    arr = specifics.split if info == "name"
     end
   end
+  return arr.first
 end
 
 def get_contestant_name(data, occupation)
