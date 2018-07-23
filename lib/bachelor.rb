@@ -45,7 +45,6 @@ def get_occupation(data, hometown)
         if hash["hometown"] == hometown
           return hash["occupation"]
         end
-      
     end
   end
 end
